@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name = "description" content = "Chat App">
+		<title>Basic Chat App</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	<body>
+		<h1>Code Weekend Sample Chat App</h1>
+		<p id="intro-para">This is a basic Chat App that you can use to send messages!</p>
+		<p id="intro-para2">Beofre your start chatting, type the command'/setName <yourname>' in the message box to set up your user name. (e.g. /setName 小考拉)</p>
+		<h3 class="red-text">Messages</h3>
+		<p>Here is a list of all previous messages:</p>
+		<!--
+		<p class="class_name">You can insert a link into your text like <a href="http://www.google.com">this</a>.</p>
+		-->
+
+		<ul id="messages"></ul>
+		<!--submitted messages will be appended here-->
+
+		<form id="message-form" action="#">
+			<textarea id="message" placeholder="Type your message here" required></textarea>
+			<button id="submit">Send Message</button>
+			<button id="delete">Delete Message</button>
+			<button id="hide">Hide Messages</button>
+		</form>
+		<ul class="messages"></ul>
+
+		<script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
+        <script src="http://underscorejs.org/underscore-min.js"></script>
+		<script src="socket-client.js"></script>
+        <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="js-client.js"></script>
+	</body>
+</html>
